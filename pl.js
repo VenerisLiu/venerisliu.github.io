@@ -1,4 +1,4 @@
-{
+{"images":[
     {"text":"1.jpg"},
     {"text":"2.jpg"},
     {"text":"3.jpg"},
@@ -19,4 +19,4 @@
     {"text":"18.jpg"},
     {"text":"19.jpg"},
     {"text":"20.jpg"},
-}
+]}
