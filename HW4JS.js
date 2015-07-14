@@ -1,4 +1,4 @@
-// JavaScript Document
+﻿// JavaScript Document
 var i = 0;
 var j = 0;
 var images = new Array();
