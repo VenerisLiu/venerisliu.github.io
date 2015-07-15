@@ -121,6 +121,7 @@ window.onmouseup = function (evt) {
                     bigimg.style.top = '3%';
                     bigimg.style.left = (document.documentElement.clientWidth - 550) / 2 + 'px';
                     bigimg.style.zIndex = '1';
+                    bigimg.style.backgroundColor = '#FFFFFF';
                     bigimg.id = 'bigig';
                     document.getElementsByTagName('body')[0].appendChild(bigimg);
                     var igg = document.createElement('img');
@@ -130,6 +131,7 @@ window.onmouseup = function (evt) {
                     var pll = document.createElement('p');
                     pll.innerHTML = data.images[s - 1].text;
                     pll.align = 'center';
+                    pll.style.backgroundColor = '#FFFFFF';
                     bigimg.appendChild(pll);
                     flag = true;
                     break;
