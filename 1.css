@@ -1,4 +1,9 @@
-﻿#mainhead
+﻿body
+{
+    background-image:url(5.jpg)
+}
+
+#mainhead
 {
     text-align:center;
     font-size:30px;

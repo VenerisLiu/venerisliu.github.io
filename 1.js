@@ -113,3 +113,11 @@ userList.on("child_added", function (snapshot) {
     userlist.appendChild(newuseronline);
 });
 
+window.onbeforeunload = function () {
+    userList.child(username).remove();
+    islogin = false;
+    isusedName = true;
+    var delName = document.getElementById(username);
+    delName.remove();
+}
+
