@@ -1,0 +1,64 @@
+#mainhead
+{
+    text-align:center;
+    font-size:30px;
+}
+
+#userlist
+{
+    position:absolute;
+    left:10%;
+    top:5%;
+    width:10%;
+    height:40%;
+    border:3px solid red;
+    text-align:center;
+}
+
+#talkbox
+{
+    position:absolute;
+    overflow:auto;
+    left:30%;
+    top:9%;
+    width:40%;
+    height:36%;
+    border:2px solid black;
+}
+
+#ms
+{
+    position:absolute;
+    left:30%;
+    top:5%;
+    width:40%;
+    height:3%;
+    text-align:center;
+}
+
+#text
+{
+    position:absolute;
+    left:30%;
+    top:48%;
+    width:34%;
+    height:5%;
+}
+
+#send
+{
+    position:absolute;
+    left:66%;
+    top:48%;
+    width:4%;
+    height:2%;
+}
+
+#quit
+{
+    position:absolute;
+    left:66%;
+    top:51%;
+    width:4%;
+    height:2%;
+}
