@@ -1,4 +1,4 @@
-var myFirebaseRef = new Firebase("https://crackling-inferno-4296.firebaseio.com/");
+ï»¿var myFirebaseRef = new Firebase("https://crackling-inferno-4296.firebaseio.com/");
 
 var message = document.getElementById('text');
 var islogin = false;
@@ -13,16 +13,16 @@ var username;
 
 userList.on("value", function (temp) {
     while (isusedName) {
-        username = prompt("ÇëÊäÈëÄãµÄÓÃ»§Ãû", "username");
+        username = prompt("è¯·è¾“å…¥ä½ çš„ç”¨æˆ·å", "username");
         isusedName = temp.hasChild(username);
         if (isusedName) {
-            alert("¸ÃÓÃ»§ÒÑ¾­ÔÚÏß£¬Çë³¢ÊÔĞÂµÄÓÃ»§Ãû");
+            alert("è¯¥ç”¨æˆ·å·²ç»åœ¨çº¿ï¼Œè¯·å°è¯•æ–°çš„ç”¨æˆ·å");
         }
         else {
             var myname = userList.child(username);
             myname.set('1');
             islogin = true;
-            alert("ÒÑµÇÈë");
+            alert("å·²ç™»å…¥");
         }
     }
 });
@@ -33,13 +33,13 @@ btnSend.onclick = function () {
 
 btnQuit.onclick = function () {
     if (!islogin) {
-        alert("Ã»ÓĞµÇÂ¼£¬²»ĞèÒªÍË³ö");
+        alert("æ²¡æœ‰ç™»å½•ï¼Œä¸éœ€è¦é€€å‡º");
         return;
     }
     userList.child(username).remove();
     islogin = false;
     isusedName = true;
-    alert("ÒÑµÇ³ö");
+    alert("å·²ç™»å‡º");
     var delName = document.getElementById(username);
     delName.remove();
 }
@@ -47,19 +47,19 @@ btnQuit.onclick = function () {
 function sendMessage() {
     //alert(message.value);
     if (!islogin) {
-        alert("Äú»¹Ã»ÓĞµÇÂ¼");
+        alert("æ‚¨è¿˜æ²¡æœ‰ç™»å½•");
         userList.on("value", function (temp) {
             while (isusedName) {
-                username = prompt("ÇëÊäÈëÄãµÄÓÃ»§Ãû", "username");
+                username = prompt("è¯·è¾“å…¥ä½ çš„ç”¨æˆ·å", "username");
                 isusedName = temp.hasChild(username);
                 if (isusedName) {
-                    alert("¸ÃÓÃ»§ÒÑ¾­ÔÚÏß£¬Çë³¢ÊÔĞÂµÄÓÃ»§Ãû");
+                    alert("è¯¥ç”¨æˆ·å·²ç»åœ¨çº¿ï¼Œè¯·å°è¯•æ–°çš„ç”¨æˆ·å");
                 }
                 else {
                     var myname = userList.child(username);
                     myname.set('1');
                     islogin = true;
-                    alert("ÒÑµÇÈë");
+                    alert("å·²ç™»å…¥");
                 }
             }
         })
@@ -67,7 +67,7 @@ function sendMessage() {
     else {
         var ms = message.value;
         if (ms == '') {
-            alert("²»ÄÜ·¢ËÍ¿ÕÏûÏ¢");
+            alert("ä¸èƒ½å‘é€ç©ºæ¶ˆæ¯");
         }
         else {
             var d = new Date();
