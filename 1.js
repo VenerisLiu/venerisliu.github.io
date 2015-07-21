@@ -552,3 +552,7 @@ gameClass.post.onmousemove = function (e) {
     }
 }
 
+gameClass.post.ondragstart = function (e) {
+    return false;
+}
+
