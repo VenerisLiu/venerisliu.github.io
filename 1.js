@@ -391,7 +391,7 @@ var gameClass = {
     post: document.createElement('img'),
     buff:document.createElement('p'),
     score: 0,
-    bullet: 20,
+    bullet: 30,
     isGameStart: false,
     gunPostionX: 0,
     gunPostionY: 0,
@@ -404,7 +404,7 @@ var gameClass = {
     },
     create: function () {
         this.score = 0;
-        this.bullet = 20;
+        this.bullet = 30;
 
         this.gameWindow.id = 'gameWindow';
         this.gameWindow.style.left = (browserWindowWidth - 800) / 2 + 'px';
